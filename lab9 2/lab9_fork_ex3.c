@@ -4,12 +4,12 @@
 
 int main()
 {
-    printf("Using fork() system call.\n");
+printf("Using fork() system call.\n");
 
-    fork();
-    fork();
-    fork();
-    fork();
-    printf("Predict how many times this message will be printed\n");
-    return 0;
+fork();
+fork();
+fork();
+fork();
+printf("Predict how many times this message will be printed\n");
+return 0;
 }

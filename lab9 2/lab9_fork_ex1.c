@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
-
+//gcc -o ex2 lab9_fork_ex2.c
 #define SUCCESS 0
 #define ERROR  -1
 
