@@ -24,7 +24,7 @@ int main()
     pthread_t thread1, thread2;
 
     // Initialize semaphores
-    bin_sem1 = sem_open("/bin_sem1", O_CREAT, S_IRUSR | S_IWUSR, 0);
+    bin_sem1 = sem_open("/bin_sem1", O_CREAT, S_IRUSR | S_IWUSR, 1);
     bin_sem2 = sem_open("/bin_sem2", O_CREAT, S_IRUSR | S_IWUSR, 0);
 
     if (bin_sem1 == SEM_FAILED || bin_sem2 == SEM_FAILED) {

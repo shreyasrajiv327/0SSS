@@ -21,9 +21,9 @@ int main(){
   // Install our own signal handler for SIGINT with sigint_handler
   // copy the earlier pointer to the signal installed into sigintDefault
   pSigintHandler = sigint_handler;
-  
+
   // 1. Set it with my handler
-  //pDefaultHandler = signal(SIGINT, pSigintHandler);
+  pDefaultHandler = signal(SIGINT, pSigintHandler);
 
   // 2. Set it to ignore the Control+C signal, now you can stop it with Control+Z
   // Restart it with fg command. You can find the PID with ps -all and 

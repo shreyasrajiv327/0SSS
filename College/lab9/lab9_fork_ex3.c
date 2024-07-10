@@ -7,9 +7,10 @@ int main()
     printf("Using fork() system call.\n");
 
     fork();
+    printf("\nfirst child");
     fork();
+    printf("\nSecond child");
     fork();
-    fork();
-    printf("Predict how many times this message will be printed\n");
+    printf("\nThird child");
     return 0;
 }
